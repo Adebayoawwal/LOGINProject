@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<form method="post">
+    <img src="Image/Veiw.jpg" class="img" alt="">
+
+    <div class="container">
+        <div class="text">
+            <h2>Login</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input asp-for="UserName" class="form-control" placeholder="Username" />
+                <span asp-validation-for="UserName" class="text-danger" />
+            </div>
+            <div class="col">
+                <input asp-for="Password" class="form-control" placeholder="Password" />
+                <span asp-validation-for="Password" class="text-danger" />
+            </div>
+        </div>
+            <div class="btn">
+                <button type="submit" class="form-control btn-success" value="Submit" >Login</button>
+            </div>
+    </div>
+
+</form>
+</body>
+</html>
